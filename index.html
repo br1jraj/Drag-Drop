@@ -3,11 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Kandan Board</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <div class="container">
+        <header>
+            <h1>Simple Kanban Board</h1>
+        </header>
+
+        <main class="board">
+            <!-- list1 -->
+            <section class="list" id="list1">
+                <h2>To Do</h2>
+                <div class="card" draggable="true" id="card1">Wash Dish</div>
+                <div class="card" draggable="true" id="card2">Buy Groceries</div>
+            </section>
+            <!-- list 2 -->
+            <section class="list" id="list2">
+                <h2>In Progress</h2>
+                <div class="card" id="card3">Learn to Code</div>
+            </section>
+            <!-- list3 -->
+             <section class="list" id="list3">
+                <h2>Done</h2>
+             </section>
+        </main>
+    </div>
 
     <script src="script.js"></script>
 </body>
